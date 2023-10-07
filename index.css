@@ -85,10 +85,6 @@ body {
   margin-bottom: 40px;  
 }
 
-.section:last-of-type {
-  margin-bottom: 0px;  
-}
-
 .section__title {
   letter-spacing: 5px;
   font-size: 20px;
@@ -146,8 +142,45 @@ a:hover {
     padding: 5px;
     margin: 10px;
     border: 1px solid #000;
+    border-radius: 10px;
     font-weight: bold;
     font-size: 15px;
+}
+
+.project {
+  min-width: 20%;
+  text-align: center;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-color: rgba(58, 58, 58, 0.103);
+}
+
+.project:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.projects {
+  text-align: center;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  transition: 0.3s ease-in;
+}
+
+@media(max-width: 550px) {
+  .projects {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.projects:hover {
+  transform: translateY(-5px);
+  box-shadow: 10px 5px 5px black;
 }
 
 @keyframes bounce {
@@ -167,6 +200,6 @@ a:hover {
 	}
 }
 
-.skill:hover {
-    animation: bounce 1s;
+.social:hover {
+  animation: bounce 1s;
 }
